@@ -9,7 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace iMonitor2
+
+namespace iMonitor2.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
