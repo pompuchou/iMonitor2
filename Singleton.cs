@@ -1,6 +1,6 @@
 ﻿using Log4NetHelper;
 
-namespace CompanioNc8
+namespace iMonitor2
 {
     /// <summary>
     /// This static class turns the non-invasive KeyboardHookManager into a singleton, accessible by all modules

@@ -7,7 +7,7 @@
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:vm="clr-namespace:iMonitor2.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="iMonitor2" Height="90" Width="160">
     <i:Interaction.Behaviors>
         <vm:NotifyTrayIconBehavior />
     </i:Interaction.Behaviors>

@@ -1,4 +1,4 @@
-﻿using CompanioNc8;
+﻿using iMonitor2.ViewModels;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 using System.Text;
@@ -12,6 +12,8 @@ namespace iMonitor2
     /// </summary>
     public partial class App : System.Windows.Application
     {
+        private CsfMonitor _monitor;
+
         public IServiceProvider? ServiceProvider { get; private set; }
         public static IConfiguration? _configuration { get; private set; }
         protected override void OnStartup(StartupEventArgs e)
@@ -43,6 +45,10 @@ namespace iMonitor2
 
             LogHelper.Instance.Info("************************************************************************************************************");
             LogHelper.Instance.Info("Logging in!");
+
+            _monitor = new(200);
+            _monitor.Start();
+
         }
         protected override void OnExit(ExitEventArgs e)
         {
